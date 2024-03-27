@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private float speed = 8.0f;
     private float zBound = 15;
     private float xBound = 15;
+    private float PlayerHP = 10;
 
     void Start()
     {
@@ -42,6 +43,15 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > xBound)
         {
             transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
+        }
+    }
+
+    //Check if player gets hit by enemies
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemies"))
+        {
+            Debug.Log("Your character has lost 1 hp!");
         }
     }
 }
