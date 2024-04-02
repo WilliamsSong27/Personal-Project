@@ -356,6 +356,10 @@
 "Assets/Scripts/EnemyFollowPlayer.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SpawnManager.cs"
+"Assets/SimpleToon/Model/Kawaii Slimes/Cameras/Scripts/AbstractTargetFollower.cs"
+"Assets/SimpleToon/Model/Kawaii Slimes/Cameras/Scripts/FreeLookCam.cs"
+"Assets/SimpleToon/Model/Kawaii Slimes/Cameras/Scripts/PivotBasedCameraRig.cs"
+"Assets/SimpleToon/Scripts/SelfRotation.cs"
 -langversion:9.0
 
 /deterministic

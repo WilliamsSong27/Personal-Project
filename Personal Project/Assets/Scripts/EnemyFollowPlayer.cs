@@ -18,9 +18,11 @@ public class EnemyFollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Enemy follow player
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed);
 
+        //Boundary
         if(transform.position.x < -Boundary)
         {
             Destroy(gameObject);
